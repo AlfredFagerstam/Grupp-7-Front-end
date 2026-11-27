@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hanna - Vektor Studio</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="hstyle.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/axios@1.20.0/dist/axios.min.js"></script>
+    <!--<script src="script.js" defer></script>-->
     <script src="hscript.js" defer></script>
 </head>
 <body>
@@ -47,10 +49,12 @@ Nedan kan du se ett urval av projekt där fokus har legat på innehållsprodukti
     </section>
 
     <section class="slideshow">
+        <div class="images">
+            <img id="image-slide" src="images/01-hbildspel.png" alt="Illustration av textproduktion och publicering av innehåll på en weebplats.">
 
-        <img id="slide" src="" alt="">
-        <a class="prev">&#10094;</a><!--varför inte id?-->
-        <a class="next">&#10095;</a><!--varför inte id?-->
+        </div>
+        <button id="prev" aria-label="Föregående bild">&#10094;</button><!--varför inte id?-->
+        <button id="next" aria-label="Nästa bild">&#10095;</button><!--varför inte id?-->
     </section>
 
 

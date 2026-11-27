@@ -1,6 +1,6 @@
 /* :root färger*/ 
 
-
+/* 
 body {
     font-family: "Roboto", sans-serif;
     color: #334155;
@@ -58,25 +58,9 @@ header {
 
 #menu-toggle {
     display: none;
-}
+} */
 
-#menuIcon {
-    grid-row: 1;
-    grid-column: 2;
-    font-size: 2rem;
-    color: #f8fafc;
-}
-
-#menu {
-    display: none;
-    grid-row: 2;
-    grid-column: 1/ span 2;
-    list-style-type: none; /* ?*/
-    margin: 0;
-    padding: 0;
-}
-
-#menu li {
+/* #menu li {
     padding: 0.5rem 0;
 }
 
@@ -96,7 +80,7 @@ header {
 
 #menu-toggle:checked ~ #menu {
     display: block;
-}
+} */
 
 #flex-container {
     display: flex;
@@ -113,7 +97,7 @@ header {
     color: #faf6ec;
 }
 
-.footer {
+/* .footer {
     background-color: #1e293b;
     margin-top: 2rem;
     padding: 0.5rem 0;
@@ -121,5 +105,5 @@ header {
 
 .footer p {
     color: #f8fafc;
-}
+} */
 
