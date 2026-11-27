@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontakt - Vektor Studio</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="kontaktvalidering.js" defer></script>
 </head>
+
 <body>
     <header>
-        <img src="logo.svg" alt="Vektor Studio logotyp" id="logo">
+        <img src="logo.png" alt="Vektor Studio logotyp">
         <input type="checkbox" id="menu-toggle">
         <label for="menu-toggle" id="menuIcon">&#9776;</label>
         <ul id="menu">
@@ -31,30 +33,27 @@
             <p>info@vektorstudio.se</p>
         </div>
 
-        <form id="contactForm">
+        <form class="contact-form">
             <label for="name">Namn (obligatoriskt)</label>
             <input type="text" id="name" class="field">
-            <p class="feedback" id="nameFeedback"></p>
+            <p class="validation-text" id="nameValidation"></p>
 
             <label for="phone">Telefonnummer (obligatoriskt)</label>
             <input type="text" id="phone" class="field">
-            <p class="feedback" id="phoneFeedback"></p>
+            <p class="validation-text" id="phoneValidation"></p>
 
             <label for="email">E-postadress (obligatoriskt)</label>
             <input type="text" id="email" class="field">
-            <p class="feedback" id="emailFeedback"></p>
+            <p class="validation-text" id="emailValidation"></p>
 
             <label for="message">Meddelande (obligatoriskt)</label>
             <textarea id="message" class="field"></textarea>
-            <p class="feedback" id="messageFeedback"></p>
+            <p class="validation-text" id="messageValidation"></p>
 
-            <button type="button" id="sendButton">Skicka</button>
-            <p class="feedback" id="formFeedback"></p>
+            <button type="button" id="sendButton" class="button blue-button">Skicka</button>
+            <p class="validation-text" id="sendResult"></p>
         </form>
     </div>
-
-    <div class="footer">
-        <p>Vektor Studio, Örebro</p>
-    </div>
 </body>
+
 </html>
